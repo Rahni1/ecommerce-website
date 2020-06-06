@@ -1,0 +1,6 @@
+[submodule "ecommerce-back\\"]
+	path = ecommerce-back\\
+	url = ./ecommerce-back\\
+[submodule "ecommerce-front\\"]
+	path = ecommerce-front\\
+	url = ./ecommerce-front\\
