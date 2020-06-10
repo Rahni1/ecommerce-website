@@ -1,5 +1,0 @@
-{
-    "beautify.config": "",
-    "prettier.arrowParens": "avoid",
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-}

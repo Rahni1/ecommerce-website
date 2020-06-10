@@ -14,16 +14,16 @@ const Signup = () => {
 
   const { name, email, password, success, error } = values;
 
-  const handleChange = name => event => {
+  const handleChange = (name) => (event) => {
     setValues({ ...values, error: false, [name]: event.target.value });
   };
 
   // Signup.js
-  const clickSubmit = event => {
+  const clickSubmit = (event) => {
     event.preventDefault();
     setValues({ ...values, error: false });
     signup({ name, email, password })
-      .then(data => {
+      .then((data) => {
         console.log("++ data: ", data);
 
         // if you need to check error from backend
@@ -41,7 +41,7 @@ const Signup = () => {
           });
         }
       })
-      .catch(exc => {
+      .catch((exc) => {
         console.error("++ exc: ", exc);
         setValues({ ...values, error: exc.message, success: false });
       });
