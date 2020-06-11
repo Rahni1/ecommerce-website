@@ -59,7 +59,7 @@ exports.signin = (req, res) => {
             });
         }
         // generate a signed token with user id and secret
-        const token = jwt.sign({ _id: user._id }, process.env.JWT_SECRET || 'cdgysbhds');
+        const token = jwt.sign({ _id: user._id }, process.env.JWT_SECRET);
         // persist the token as 't' in cookie with expiry date
         res.cookie('t', token, { expire: new Date() + 9999 });
         // return response with user and token to frontend client
@@ -74,7 +74,7 @@ exports.signout = (req, res) => {
 };
 
 exports.requireSignin = expressJwt({
-    secret: process.env.JWT_SECRET || 'cdgysbhds',
+    secret: process.env.JWT_SECRET,
     userProperty: 'auth'
 });
 

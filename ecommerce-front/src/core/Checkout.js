@@ -4,7 +4,7 @@ import {
   getProducts,
   getBraintreeClientToken,
   processPayment,
-  createOrder,
+  createOrder
 } from "./apiCore";
 import Card from "./Card";
 import { isAuthenticated } from "../auth";
@@ -88,13 +88,12 @@ setData({...data, address: event.target.value})
         // empty cart
         // create order
  
-        const createOrderData = {
-            products: products,
-            transaction_id: response.transaction.id,
-            amount: response.transaction.amount,
-            address: deliveryAddress
-        };
- 
+    const createOrderData = {
+      products: products,
+      transaction_id: response.transaction.id,
+      amount: response.transaction.amount,
+      address: data.address
+    }
         createOrder(userId, token, createOrderData)
             .then(response => {
                 emptyCart(() => {
