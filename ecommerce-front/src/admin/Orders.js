@@ -22,7 +22,7 @@ const Orders = () => {
   };
 
   const loadStatusValues = () => {
-    getStatusValues(user._id, token).then((data) => {
+    getStatusValues(user._id, token).then(data => {
       if (data.error) {
         console.log(data.error);
       } else {

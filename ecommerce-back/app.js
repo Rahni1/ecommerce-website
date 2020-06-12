@@ -22,7 +22,8 @@ const app = express()
 mongoose.connect(process.env.DATABASE || 'mongodb://localhost:27017/ecommerce', {
 useNewUrlParser: true,
 useCreateIndex: true,
-useUnifiedTopology: true
+useUnifiedTopology: true,
+useFindAndModify: false
 }).then(() => console.log('DB connected'))
 
 // middlewares 
