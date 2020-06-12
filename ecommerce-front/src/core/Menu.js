@@ -21,17 +21,6 @@ const Menu = ({ history }) => {
           </Link>
         </li>
 
-        {isAuthenticated() && isAuthenticated().user.role === 0 && (
-          <li className="nav-item">
-            <Link
-              className="nav-link"
-              style={isActive(history, "/dashboard")}
-              to="/dashboard"
-            >
-              Dashboard
-            </Link>
-          </li>
-        )}
         <li className="nav-item">
           <Link
             className="nav-link"
@@ -48,7 +37,7 @@ const Menu = ({ history }) => {
             style={isActive(history, "/cart")}
             to="/cart"
           >
-            Cart{" "}
+            My Cart{" "}
             <sup>
               <small className="cart-badge">{itemTotal()}</small>
             </sup>
@@ -59,8 +48,8 @@ const Menu = ({ history }) => {
           <li className="nav-item">
             <Link
               className="nav-link"
-              style={isActive(history, "/dashboard")}
-              to="/dashboard"
+              style={isActive(history, "/user/dashboard")}
+              to="/user/dashboard"
             >
               Dashboard
             </Link>
