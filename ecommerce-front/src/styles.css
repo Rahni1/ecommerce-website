@@ -1,3 +1,53 @@
+/* Colors */
+/* $white-grey: #f4f4f4;
+$orange: #ff7315;
+$dark-grey: #3a3535;
+$black: #232020; */
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
+/* Footer */
+#footer {
+    position: relative;
+    padding: 45px 60px;
+    background-color: #232020;
+    color:#f4f4f4;
+    margin-top: 80px;
+}
+.twitter-icon {
+    margin-left: 25px;
+}
+.hr {
+    background-color:#f4f4f4;
+}
+#footer .links .col {
+    flex: 50%;
+    margin-bottom: 30px;
+}
+#footer .links .col {
+    display: flex;
+    flex-direction: column;
+}
+.link, .c-link {
+    color:#f4f4f4;
+    display: flex;
+    font-size: 15px;
+}
+.link:hover, .c-link:hover {
+    text-decoration: underline;
+    color:#f4f4f4;
+}
+h5 {
+    text-transform: uppercase;
+    font-size: 18px;
+}
+
+li {
+    list-style: none;
+}
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
 .btn, .jumbotron, .nav :hover {
     border-radius: 0px;
 }

@@ -2,6 +2,7 @@ import React, { Fragment } from "react";
 import { Link, withRouter } from "react-router-dom";
 import { signout, isAuthenticated } from "../auth";
 import { itemTotal } from "./cartHelpers";
+import { Icon } from 'semantic-ui-react'
 
 const isActive = (history, path) => {
   if (history.location.pathname === path) {
@@ -37,7 +38,7 @@ const Menu = ({ history }) => {
             style={isActive(history, "/cart")}
             to="/cart"
           >
-            My Cart{" "}
+          <Icon name='shopping cart'/>{" "}
             <sup>
               <small className="cart-badge">{itemTotal()}</small>
             </sup>
