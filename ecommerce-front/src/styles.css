@@ -40,14 +40,30 @@ h5 {
     text-transform: uppercase;
     font-size: 18px;
 }
-
+.card-btn-1 {
+    color: #ff7315;
+    border: 1px solid #ff7315;
+}
+.card-btn-1:hover {
+    background-color: #ff7315;
+    border: 1px solid #ff7315;
+    color: #f4f4f4;
+}
 li {
     list-style: none;
+}
+.in-stock {
+    background-color: #ff7315;
+}
+.out-of-stock {
+    background-color: #3a3535;
 }
 *, *::before, *::after {
     box-sizing: inherit;
 }
-
+.product-header {
+    color: #232020;
+}
 .btn, .jumbotron, .nav :hover {
     border-radius: 0px;
 }
@@ -68,31 +84,15 @@ color: #fff;
 font-weight: bold;
 }
 
-/* black shade from 10-1 */
-.black-10 {
-    background: #f2f2f2;
-}
-.black-9 {
-    background: #e6e6e6;
-}
-.black-8 {
-    background: #d9d9d9;
-}
-.black-7 {
-    background: #cccccc;
-}
-.black-6 {
-    background: #bfbfbf;
-}
-.black-5 {
-    background: #b3b3b3;
-}
-
 /**
  * product image on card
  */
-.product-img {
-    min-height: 100px;
+.card-body {
+    width: 250px;
+}
+
+.p-info {
+    color: #3a3535;
 }
 
 .jumbotron h2 {
@@ -114,6 +114,9 @@ font-weight: bold;
     -webkit-animation: Gradient 15s ease infinite;
     -moz-animation: Gradient 15s ease infinite;
     animation: Gradient 15s ease infinite;
+}
+.product-header {
+    font-size: 18px;
 }
  
 @-webkit-keyframes Gradient {

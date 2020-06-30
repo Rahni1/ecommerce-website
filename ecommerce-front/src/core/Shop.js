@@ -5,6 +5,7 @@ import { getCategories, getFilteredProducts } from "./apiCore";
 import Checkbox from "./Checkbox";
 import { prices } from "./fixedPrices";
 import RadioBox from "./RadioBox";
+import {Link} from 'react-router-dom'
 
 const Shop = () => {
   const [myFilters, setMyFilters] = useState({
@@ -120,7 +121,7 @@ const Shop = () => {
           <h2 className="mb-4">Products</h2>
           <div className="row">
             {filteredResults.map((product, i) => (
-              <div key={i} className="col-4 mb-3">
+              <div key={i} className="col-4 mb-3">              
                 <Card product={product} />
               </div>
             ))}
