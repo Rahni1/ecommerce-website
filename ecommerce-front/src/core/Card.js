@@ -28,7 +28,6 @@ const Card = ({
   // };
   
 const addToCart = () => {
-    // console.log('added');
     addItem(product, setRedirect(true));
   };
  
@@ -94,9 +93,7 @@ const addToCart = () => {
     );
   };
   return (
-    // <div className="card ">
-      // <div className="card-header card-header-1 ">{product.name}</div>
-       <div className="card-body">
+       <div className="card-body mx-auto">
        <Link to={`/product/${product._id}`}>
         {shouldRedirect(redirect)}
         <ShowImage item={product} url="product" />

@@ -40,7 +40,7 @@ const Home = () => {
       description="Make changes now, live sustainably and help save our planet!"
       className="container-fluid">
       <Search />
-      <h2 className="mb-4">New Arrivals</h2>
+      <h2 className="text-center">New Arrivals</h2>
       <div className="row">
         {productsByArrival.map((product, i) => (
           <div key={i} className="col-4 mb-3">
@@ -49,7 +49,7 @@ const Home = () => {
         ))}
       </div>
 
-      <h2 className="mb-4">Best Sellers</h2>
+      <h2 className="text-center">Best Sellers</h2>
       <div className="row">
         {productsBySell.map((product, i) => (
           <div key={i} className="col-4 mb-3">
