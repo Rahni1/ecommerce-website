@@ -1,8 +1,8 @@
-/* Colors */
-/* $white-grey: #f4f4f4;
+/* 
+ $white-grey: #f4f4f4;
 $orange: #ff7315;
 $dark-grey: #3a3535;
-$black: #232020; */
+$black: #232020;  */
 @import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
 
 /* Footer */
@@ -69,6 +69,29 @@ li {
 }
 /* cart badge */
 
+.btn-color {
+    background-color: #ff7315;
+    border: 1px solid #ff7315;
+}
+.btn-color:hover {
+    background-color: #f56506;
+    border: 1px solid #f56506;
+}
+.btn-dashboard {
+    border: 1px solid #ff7315;
+    color: #ff7315;
+}
+.btn-dashboard:hover {
+    background-color: #ff7315;
+    border: 1px solid #ff7315;
+}
+.back-link {
+    color: #3a3535;
+}
+.back-link:hover {
+    color: #3a3535;
+    text-decoration: underline;
+}
 .cart-badge, .cart-badge:hover {
     border-radius: 50%;
     padding: 2px;
@@ -98,6 +121,9 @@ font-weight: bold;
 .jumbotron h2 {
     margin-top: -20px;
 }
+.cart-icon {
+margin-left: auto;
+}
 
 @media only screen and (max-width: 600px) {
     .jumbotron h2 {
@@ -109,11 +135,13 @@ font-weight: bold;
     width: 30wh;
     height: 30vh;
     color: #fff;
-    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
-    background-size: 400% 400%;
-    -webkit-animation: Gradient 15s ease infinite;
-    -moz-animation: Gradient 15s ease infinite;
-    animation: Gradient 15s ease infinite;
+    background: url("./img/forest.jpg") no-repeat;
+    background-position: center;
+    background-size: cover;
+} 
+
+.jumbotron:after {
+    background-color: rgba(26, 194, 26, 0.4);
 }
 .product-header {
     font-size: 18px;

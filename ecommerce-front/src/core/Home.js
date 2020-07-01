@@ -37,7 +37,7 @@ const Home = () => {
   return (
     <Layout
       title="Home Page"
-      description="Node react ecommerce app"
+      description="Make changes now, live sustainably and help save our planet!"
       className="container-fluid">
       <Search />
       <h2 className="mb-4">New Arrivals</h2>

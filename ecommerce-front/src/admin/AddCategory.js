@@ -45,7 +45,7 @@ const AddCategory = () => {
           required
         />
       </div>
-      <button className="btn btn-outline-primary">Create Category</button>
+      <button className="btn btn-dashboard btn-outline-primary">Create Category</button>
     </form>
   );
 
@@ -64,7 +64,7 @@ const AddCategory = () => {
 
   const goBack = () => (
     <div className="mt-5">
-      <Link to="/admin/dashboard" className="text-warning">
+      <Link to="/admin/dashboard" className="back-link">
         Back to Dashboard
       </Link>
     </div>
@@ -73,7 +73,7 @@ const AddCategory = () => {
   return (
     <Layout
       title="Add a new category"
-      description={`G'day ${user.name}, ready to add a new category?`}>
+      description={``}>
       <div className="row">
         <div className="col-md-8 offset-md-2">
           {showSuccess()}

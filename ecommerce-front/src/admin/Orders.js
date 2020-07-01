@@ -109,7 +109,7 @@ const showStatus = o => (
                   <li className="list-group-item">
                     Transaction ID: {o.transaction_id}
                   </li>
-                  <li className="list-group-item">Amount: ${o.amount}</li>
+                  <li className="list-group-item">Amount: £{o.amount}</li>
                   <li className="list-group-item">Ordered by: {o.user.name}</li>
                   <li className="list-group-item">
                     Ordered on: {moment(o.createdAt).fromNow()}

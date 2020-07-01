@@ -154,7 +154,7 @@ const AddProduct = () => {
         />
       </div>
 
-      <button className="btn btn-outline-primary">Create Product</button>
+      <button className="btn btn-dashboard btn-outline-primary">Create Product</button>
     </form>
   );
   const showError = () => (

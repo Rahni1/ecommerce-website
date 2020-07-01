@@ -6,7 +6,7 @@ import { Icon } from 'semantic-ui-react'
 
 const isActive = (history, path) => {
   if (history.location.pathname === path) {
-    return { color: "#ff9900" };
+    return { color: "#ff7315" };
   } else {
     return { color: "#ffffff" };
   }
@@ -32,19 +32,6 @@ const Menu = ({ history }) => {
           </Link>
         </li>
 
-        <li className="nav-item">
-          <Link
-            className="nav-link"
-            style={isActive(history, "/cart")}
-            to="/cart"
-          >
-          <Icon name='shopping cart'/>{" "}
-            <sup>
-              <small className="cart-badge">{itemTotal()}</small>
-            </sup>
-          </Link>
-        </li>
-
         {isAuthenticated() && isAuthenticated().user.role === 0 && (
           <li className="nav-item">
             <Link
@@ -52,7 +39,7 @@ const Menu = ({ history }) => {
               style={isActive(history, "/user/dashboard")}
               to="/user/dashboard"
             >
-              Dashboard
+              My Account
             </Link>
           </li>
         )}
@@ -107,6 +94,19 @@ const Menu = ({ history }) => {
             </span>
           </li>
         )}
+
+        <li className="nav-item cart-icon">
+        <Link
+          className="nav-link"
+          style={isActive(history, "/cart")}
+          to="/cart"
+        >
+        <Icon name='shopping cart'/>{" "}
+          <sup>
+            <small className="cart-badge">{itemTotal()}</small>
+          </sup>
+        </Link>
+      </li>
       </ul>
     </div>
   );
