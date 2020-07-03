@@ -89,8 +89,8 @@ const Dashboard = () => {
 
   return (
     <Layout
-      title="Dashboard"
-      description={`Hello ${name}!`}
+      title={`${name}'s Account`}
+      description={``}
       className="container-fluid">
       <div className="row">
         <div className="col-3">{userLinks()}</div>

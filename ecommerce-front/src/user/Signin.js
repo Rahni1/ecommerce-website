@@ -5,8 +5,8 @@ import { signin, authenticate, isAuthenticated } from "../auth";
 
 const Signin = () => {
   const [values, setValues] = useState({
-    email: "rahni@xxx.com",
-    password: "rahniaintmyname1",
+    email: "email@gmail.com",
+    password: "password",
     error: "",
     loading: false,
     redirectToReferrer: false,
@@ -103,7 +103,7 @@ const Signin = () => {
   return (
     <Layout
       title="Signin"
-      description="Signin to Node React E-commerce App"
+      description="Signin to our eco-friendly e-commerce shop."
       className="container col-md-8 offset-md-2">
       {showLoading()}
       {showError()}
