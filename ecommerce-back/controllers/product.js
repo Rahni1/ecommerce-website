@@ -32,6 +32,7 @@ if(err) {
         error: 'Image could not be uploaded'
     })
 }
+
 // check for all fields
 const {name, description, price, category, quantity, shipping} = fields
 

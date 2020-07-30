@@ -3,6 +3,7 @@ import Layout from "./Layout";
 import { read, listRelated } from "./apiCore";
 import Card from "./Card";
 
+
 const Product = props => {
   const [product, setProduct] = useState({});
   const [relatedProduct, setRelatedProduct] = useState([]);
@@ -59,3 +60,4 @@ const Product = props => {
 };
 
 export default Product;
+

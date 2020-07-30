@@ -71,7 +71,6 @@ const Shop = () => {
   }, []);
 
   const handleFilters = (filters, filterBy) => {
-    // console.log('SHOP', filters, filterBy)
     const newFilters = { ...myFilters };
     newFilters.filters[filterBy] = filters;
 
@@ -87,6 +86,7 @@ const Shop = () => {
     const data = prices;
     let array = [];
 
+    // for-in iterates through object
     for (let key in data) {
       if (data[key]._id === parseInt(value)) {
         array = data[key].array;

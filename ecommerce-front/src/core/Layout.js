@@ -1,8 +1,9 @@
 import React from "react";
 import Menu from "./Menu";
 import "../styles.css";
+import PropTypes from 'prop-types';
 
-const Layout = ({
+const Layout = ({ // set default props
   title = "Title",
   description = "Description",
   className,
@@ -21,3 +22,8 @@ const Layout = ({
 };
 
 export default Layout;
+
+Layout.propTypes = {
+  title: PropTypes.string,
+  description: PropTypes.string
+}

@@ -16,8 +16,8 @@ const { create,
     listSearch } = require("../controllers/product");
 const { userById } = require('../controllers/user')
 
-router.get('/product/:productId', read)
-router.post("/product/create/:userId", requireSignin, isAuth, isAdmin, create);
+router.get('/product/:productId', read) // -> get single post 
+router.post("/product/create/:userId", requireSignin, isAuth, isAdmin, create); // -> create single post
 router.delete('/product/:productId/:userId', requireSignin, isAuth, isAdmin, remove)
 // put method is used to update
 router.put('/product/:productId/:userId', requireSignin, isAuth, isAdmin, update)
@@ -27,7 +27,7 @@ router.get('/products/search', listSearch)
 router.get('/products/related/:productId', listRelated)
 router.get('/products/categories', listCategories)
 router.post('/products/by/search', listBySearch)
-router.get('/product/photo/:productId', photo)
+router.get('/product/photo/:productId', photo) // -> get photo of single post
 
 
 router.param('userId', userById)
